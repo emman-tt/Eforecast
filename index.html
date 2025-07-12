@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EWeather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   
+
+</head>
+
+<body id="body">
+
+<dotlottie-wc id="bubble" src="https://lottie.host/c7fae57a-0606-4221-a37e-7fa52b0e9a7a/qnI3VRVoch.lottie" style="width: 300px;height: 300px" speed="1" autoplay loop></dotlottie-wc>
+    <content class="content">
+        <header>
+            <div class="city" style="display: flex;gap: 20px;" >
+                <i class="fa-solid fa-location-dot" style="color: red;"></i>
+
+                <div id="location">London,UK</div>
+                
+            </div>
+
+            <div class="toggle"><i class="fa-solid fa-toggle-off"
+                    style="font-size: 30pt; color: rgb(140, 144, 249);"></i></div>
+            <div class="menu"><i id="menu" class="fa-solid fa-bars" style="color: white; font-size: 26pt;"></i></div>
+        </header>
+
+
+        <main>
+            <video id="video" autoplay loop muted>
+                <source id="videoSource" src="rainy.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+
+            <section class="time-and-search">
+                <div class="time">Today 9th July 2025</div>
+                <input type="text" id="city" placeholder="Enter city name">
+            </section>
+
+            <div class="weatherDetails">
+                <section class="weatherEmoji" id="weatherEmoji">
+                    <i id="emojiChange" class="fa-solid fa-cloud-showers-water"></i>
+                </section>
+
+                <section class="weather">
+                    <div class="weatherDisplay">
+                        <div class="weatherFigure" id="weatherFigure">19</div>
+                        <div class="celcius">.c</div>
+                    </div>
+                    <div class="condition" id="condition">Rainy</div>
+
+                </section>
+            </div>
+
+            <div class="weatherFeatures">
+                <div class="feat1">
+                    <div class="featName">Pressure</div>
+                    <div class="featEmoji">
+
+
+                       <i id="emojiPressure" class="fa-solid fa-helmet-safety"></i>
+                        <div class="wind-and-unit">
+                            <div id="pressure">24</div>
+                            <div id="unitPressure"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="feat2">
+                    <div class="featName">Wind</div>
+                    <div class="featEmoji">
+
+
+                        <i id="emojiWind" class="fa-solid fa-wind"></i>
+                        <div class="wind-and-unit">
+                            <div id="windType">24 </div>
+                            <div id="unitWind"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="feat3">
+                    <div class="featName">Humidity</div>
+                    <div class="featEmoji">
+                        <i id="emojiHumidity" class="fa-solid fa-droplet"></i>
+                        <div class="wind-and-unit">
+                            <div id="humidity">24</div>
+                            <div id="unitHumidity"></div>
+                        </div>
+                    </div>
+
+                </div>
+        </main>
+
+        <section class="end">
+            <section class="forecast">
+                <div>Forecast</div>
+            </section>
+            <section class="dayGrid">
+                <div class="day">
+                    <div class="dayName">Yesterday</div>
+                    <div class="dayEmoji"><i id="day1" class="fa-solid fa-cloud"></i></div>
+                    <div class="dayWeather" id="day1Weather">Cloudy</div>
+                    <div class="dayTemperatureFigure" id="day1Temperature">40'C</div>
+                </div>
+                <div class="day">
+                    <div class="dayName">Today</div>
+                    <div class="dayEmoji"><i id="day2" class="fa-solid fa-cloud"></i></div>
+                    <div class="dayWeather" id="day2Weather">Sunny</div>
+                    <div class="dayTemperatureFigure" id="day2Temperature">40'C</div>
+                </div>
+                <div class="day">
+                    <div class="dayName">Tomorrrow</div>
+                    <div class="dayEmoji"><i id="day3" class="fa-solid fa-cloud"></i></div>
+                    <div class="dayWeather" id="day3Weather">Cloudy</div>
+                    <div class="dayTemperatureFigure" id="day3Temperature">40'C</div>
+                </div>
+                <div class="day">
+                    <div class="dayName">Next 2 days</div>
+                    <div class="dayEmoji"><i id="day4" class="fa-solid fa-cloud-sun"></i></div>
+                    <div class="dayWeather" id="day4Weather">Sunny</div>
+                    <div class="dayTemperatureFigure" id="day4Temperature">40'C</div>
+                </div>
+                
+            </section>
+
+
+        </section>
+
+ <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+        <script src="script.js"></script>
+    </content>
+</body>
+
+</html>

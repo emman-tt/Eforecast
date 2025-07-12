@@ -230,7 +230,7 @@ function timeChange () {
     video.style.display = 'none'
   } else {
     body.style.background =
-      'linear-gradient(to bottom, rgb(97, 91, 91), rgb(50, 41, 121))'
+      'linear-gradient(to bottom, rgba(37, 24, 89, 1), rgb(50, 41, 121))'
     body.style.color = 'white'
     emojiChange.style.color = 'white'
     weatherFigure.style.color = 'white'

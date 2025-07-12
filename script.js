@@ -114,7 +114,7 @@ async function getWeather () {
   const apiKey = '7c682cb8855849fcae6c3dc3754c9319'
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${apiKey}&units=metric`
   console.log(cityValue)
-  const cordinates = `http://api.openweathermap.org/geo/1.0/direct?q=${cityValue}&limit=1&appid=${apiKey}`
+  const cordinates = `https://api.openweathermap.org/geo/1.0/direct?q=${cityValue}&limit=1&appid=${apiKey}`
 
   try {
     const cordinateResponse = await fetch(cordinates)

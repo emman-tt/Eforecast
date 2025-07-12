@@ -259,6 +259,25 @@ document.addEventListener('keydown', event => {
   }
 })
 
+document.addEventListener("click", () => {
+  if (city.value) {
+    cityValue = city.value
+     getWeather().then(() => {
+      getCordinates().then(() => {
+        getTime().then(() => {
+          timeChange()
+        })
+      })
+    })
+  }
+})
+
+
+
+
+
+
+
 async function yesterdayWeather () {
   const yesterday = new Date()
   yesterday.setDate(yesterday.getDate() - 1)

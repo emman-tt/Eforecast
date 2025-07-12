@@ -96,7 +96,7 @@ async function getCordinates () {
     //console.log(lat);
     if (lat && lon) {
       const response = await fetch(
-        `https://api.geonames.org/timezoneJSON?lat=${lat}&lng=${lon}&username=emmantt`
+        `https://secure.geonames.org/timezoneJSON?lat=${lat}&lng=${lon}&username=emmantt`
       )
       const data = await response.json()
       timezone = await data.timezoneId

@@ -215,7 +215,7 @@ function timeChange () {
   if (hour >= 5 && hour < 16) {
     body.style.background =
       'linear-gradient(to bottom, rgb(255, 255, 255) , rgba(255, 255, 255, 0.4))'
-    body.style.color = 'black'
+    body.style.color = 'rgba(0, 49, 126, 1)'
     emojiChange.style.color = 'rgb(130, 170, 234)'
     weatherFigure.style.color = 'rgb(25, 26, 27)'
     end.style.borderColor = 'rgb(132, 132, 132)'

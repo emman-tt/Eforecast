@@ -190,7 +190,7 @@ input::placeholder {
     flex-direction: column;
     background-color: rgba(247, 247, 247, 0.029);
     border: 1px solid white;
-    height: max(300px);
+    height: max(200px);
     justify-content: center;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
@@ -203,19 +203,22 @@ input::placeholder {
     left: 0;
     right: 0;
     backdrop-filter: blur(20px);
+   
 }
 
 .forecast {
-    display: flex;
+ 
     z-index: 10;
-    position: static;
-    top: 0;
+   position:relative;
+
     font-size: 30px;
-    justify-content: center;
-    width: 100%;
+left: 35%;
     margin-top: 0px;
     padding-bottom: 10px;
+    bottom: -13.4em;
 }
+
+
 
 .wind-and-unit {
     display: flex;
@@ -284,8 +287,10 @@ main{
 }
 
  .end{
-  
+  font-size: 25px;
     position: static;
     bottom:-20;
+    margin-bottom: 0;
+    padding-bottom: 0;
  }   
 }

@@ -36,7 +36,7 @@ A beautiful, responsive weather application that provides real-time weather info
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/Eforecast.git
+   git clone https://github.com/emman-tt/Eforecast.git
    cd Eforecast
    ```
 
